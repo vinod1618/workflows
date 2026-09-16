@@ -1,0 +1,28 @@
+name: NodeJs feature branch workflow
+
+# Controls when the workflow will run (Triggers on every code push)
+on:
+  workflow_dispatch:
+    inputs:
+      project:
+        description: 'Project name'
+        required: true
+        type: string
+      component:
+        description: 'Component name'
+        required: true
+        type: string
+      environment:
+        description: 'Environment name'
+        required: true
+        type: string
+
+jobs:
+  trigger:   #job name
+    runs-on: ubuntu-latest #github hosted runners
+    steps:
+        - name: clone code
+          uses: actions/checkout@v7
+
+        - name: list the files
+          run: ls -l
