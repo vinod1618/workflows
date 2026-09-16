@@ -2,7 +2,7 @@ name: NodeJs feature branch workflow
 
 # Controls when the workflow will run (Triggers on every code push)
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       project:
         description: 'Project name'
