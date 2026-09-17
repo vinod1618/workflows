@@ -30,4 +30,4 @@ jobs:
             echo "App version is: ${{ APP_VERSION }}"
 
         - name: check app version
-          run: echo "App version is ${{ APP_VERSION }}"
+          run: echo "App version is ${{ version }}"
