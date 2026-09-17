@@ -27,7 +27,7 @@ jobs:
           run: |
             APP_VERSION=$(node -p "require('./package.json').version")
             echo "version=$APP_VERSION" >> $GITHUB_ENV
-            echo "App version is: ${{ APP_ VERSION }}"
+            echo "App version is: ${{ APP_VERSION }}"
 
         - name: check app version
-          run: echo "App version is ${{ APP_ VERSION }}"
+          run: echo "App version is ${{ APP_VERSION }}"
