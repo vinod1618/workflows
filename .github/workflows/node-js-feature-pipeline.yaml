@@ -12,11 +12,6 @@ on:
         description: 'Component name'
         required: true
         type: string
-      environment:
-        description: 'Environment name'
-        required: true
-        type: string
-
 jobs:
   trigger:   #job name
     runs-on: ubuntu-latest #github hosted runners
@@ -25,4 +20,4 @@ jobs:
           uses: actions/checkout@v7
 
         - name: list the files
-          run: ls -l
+          run: ls -la
